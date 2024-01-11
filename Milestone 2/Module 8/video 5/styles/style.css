@@ -115,6 +115,9 @@ header related styles
 .banner-btn {
   text-align: center;
   margin-right: 30px;
+  display: flex;
+  gap: 10px;
+
 }
 .banner-btn-contact{
   background: #FFF8F3;
@@ -241,10 +244,10 @@ resume related styles
   display: flex ;
   gap: 60px;
 }
-.resume-container hr{
-  margin: 30px 0;
-  width: 558px;
-  background-color:  #D1D1D1;
+.resume-container hr {
+  margin: 30px auto;
+  width: 100%;
+  background-color: #D1D1D1;
 }
 /* resume column related styles */
 .resume-title {
@@ -332,3 +335,165 @@ font-weight: 400;
 line-height: 28px; /* 175% */
 }
 
+.hide{
+  display: none;
+}
+
+/* responsive design */
+/* for mobile devices */
+@media screen and (max-width: 576px) {
+  /* header section related styles */
+  .header {
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    background-image: none;
+  }
+  .banner{
+    text-align: center;
+  }
+  .banner-greetings{
+    font-size: 30px;
+  }
+  .banner-title{
+    font-size: 40px;
+  }
+  .banner .banner-image {
+    width: 100%;
+  }
+  .btn-primary{
+    margin: 10px 0;
+  }
+
+  .nav{
+    margin: 0 auto;
+  }
+  .nav> ul li{
+    padding: 10px auto;
+  }
+  /* about section related styles */
+  .about-info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-info {
+  text-align: center;
+  padding: 0;
+}
+  /* what i do section */
+  .skills-container,
+  .resume-container,
+  footer,
+  .about-info-container,
+  .banner,
+  .nav,
+  .nav> ul{
+    flex-direction: column;
+  }
+
+  .banner{
+    padding: 0;
+  }
+  #what-i-do-description{
+    padding: 20px;
+  }
+
+  /* resume section */
+  .resume-container{
+    width: 100%;
+    text-align: center;
+  }
+  .resume-container hr {
+    margin: 30px auto;
+    text-align: center;
+    width: 80%;
+    background-color: #D1D1D1;
+}
+
+footer, .about{
+  padding: 10px;
+}
+.footer-column{
+  width: 100%;
+  align-items: center;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  width: 80%;
+}
+footer form{
+  text-align: center;
+}
+
+}
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+  /* header section related styles */
+  .nav{
+    justify-content: space-around;
+    margin: auto;
+  }
+  .banner{
+    padding: 0 0 0 100px;
+  }
+  .banner-greetings{
+    font-size: 35px;
+  }
+  .banner-title{
+    font-size: 45px;
+  }
+  .banner-btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+  .banner-btn-download,
+  .banner-btn-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+  }
+
+  /* about section related styles */
+  .about-info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
+  .about-info {
+    text-align: center;
+    padding: 0;
+  }
+
+  .skills-container, .resume-container {
+    flex-direction: row;
+  }
+  #what-i-do-description{
+    padding: 20px;
+  }
+
+  /* resume section */
+  .resume-container{
+    width: 100%;
+  }
+  .resume-container hr {
+    margin: 30px auto;
+    text-align: center;
+    width: 80%;
+    background-color: #D1D1D1;
+}
+
+/* footer section related styles */
+footer, .about{
+  padding: 30px;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  width: 80%;
+}
+}
