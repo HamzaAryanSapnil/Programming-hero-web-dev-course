@@ -158,11 +158,15 @@ main section {
     padding: 20px;
   }
   nav,
-  .teams-container {
+  .teams-container,
+  .facts-card-container
+  {
     flex-direction: column;
     gap: 30px;
   }
-  .teams-content-container {
+  .teams-content-container,
+  .facts-card-container 
+  {
     /* text-align: center; */
     padding: 0 20px;
   }
@@ -171,6 +175,10 @@ main section {
   }
   .banner-content {
     margin-top: 30px;
+  }
+
+  .facts-card-container .card{
+    padding: 40px 80px;
   }
 }
 
