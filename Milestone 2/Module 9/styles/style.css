@@ -99,6 +99,7 @@ main section {
 .teams-title {
   font-size: 2.813rem;
   font-weight: 500;
+  line-height: 3rem;
 }
 .teams-title .quick-list {
   font-weight: 500;
@@ -150,6 +151,29 @@ main section {
   color: var(--Dark-02, #424242);
   margin-top: 5px;
 }
+
+
+
+/* some facts section end */
+
+
+
+/* sponsors section start style */
+.sponsors {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.sponsors-title{
+    margin-bottom: 1.5rem;
+}
+
+.sponsors-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3.125rem;
+    gap: 2.5rem;
+}
 /* responsive media query styles */
 /* responsive media query for mobile */
 
@@ -159,7 +183,8 @@ main section {
   }
   nav,
   .teams-container,
-  .facts-card-container
+  .facts-card-container,
+  .sponsors-img-container
   {
     flex-direction: column;
     gap: 30px;
@@ -182,12 +207,20 @@ main section {
   }
 }
 
+.sponsors-img-container img{
+    max-width: 165px;
+}
+
+
+
 /* responsive media query for tablet */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   header {
     padding: 50px;
   }
-  nav {
+  nav,
+  .sponsors-img-container
+  {
     flex-direction: column;
     gap: 30px;
   }
@@ -204,4 +237,8 @@ main section {
   .banner-content {
     margin-top: 30px;
   }
+}
+
+.sponsors-img-container{
+    flex-wrap: wrap;
 }
