@@ -1,12 +1,19 @@
 /* shared styles */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
 .btn-primary {
-    
+  border-radius: 8px;
+  background: #ff900e;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
 }
 /* started header */
 header {
@@ -42,14 +49,53 @@ nav li a {
   max-width: 800px;
   text-align: center;
   margin: 0 auto;
+  margin-top: 102px;
 }
 .banner-title {
   color: var(--Dark-01, #131313);
   font-size: 4rem;
   font-weight: 700;
 }
-.banner-description{
-    color: var(--Dark-03, #727272);
-font-weight: 400;
-line-height: 26px; /* 162.5% */
+.banner-description {
+  color: var(--Dark-03, #727272);
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.banner img {
+  margin-top: 32px;
+  width: 100%;
+}
+
+
+/* responsive media query styles */
+/* responsive media query for mobile */
+
+@media only screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .banner-content{
+        margin-top: 30px;
+    }
+}
+
+/* responsive media query for tablet */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .banner-content{
+        margin-top: 30px;
+    }
+    
 }
