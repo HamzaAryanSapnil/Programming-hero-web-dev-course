@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to Daisy UI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1>I explored tailwindcss</h1>
+      <h3>Now i want to know about daisy ui</h3>
+      <button class="btn">Click me</button>
+      <button class="btn btn-primary">Click me</button>
+    </header>
+    <main>
+      <button class="btn btn-outline btn-info">Info</button>
+      <button class="btn btn-outline btn-success">Success</button>
+      <button class="btn btn-outline btn-warning">Warning</button>
+      <button class="btn btn-outline btn-error">Error</button>
+
+      <button class="btn glass">Glass button</button>
+
+        <section>
+          <h2>Accordion</h2>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-medium">
+              Do you Like Tailwind css?
+            </div>
+            <div class="collapse-content"> 
+              <p>Yes I do.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+              Do you Like Daisy UI?
+            </div>
+            <div class="collapse-content"> 
+              <p>Yea I do. It almost fimilliar with bootstrap</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+              Let's see what you can do with daisy ui
+            </div>
+            <div class="collapse-content"> 
+              <p>Yeah! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla illo ducimus obcaecati aperiam fuga? Dolorem quam ipsum sapiente ipsam neque, expedita, unde consequatur sunt perspiciatis assumenda distinctio harum non quaerat, temporibus cupiditate minima facere quidem!</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- section cards -->
+      <section class="card">
+        <span class="loading loading-spinner loading-xs "></span>
+        <span class="loading loading-ball loading-xs"></span>
+        <div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+      <!-- section carousel -->
+      <section class="carousel">
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
